@@ -32,7 +32,7 @@ gulp.task("minCssTask",function () {
 	.pipe(rename({
 		suffix:".min" //重命名加min后缀
 	}))
-	.pipe(gulp.dest("dist/css/")); //输出目录
+	.pipe(gulp.dest("dist/css/min")); //输出目录
 });
 
 //配置js压缩的任务
