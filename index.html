@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title>蓝源Eloan-P2P平台</title>
+		<title></title>
 		<!--视口: 兼容移动端-->
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 		<!--引入bootstrap核心样式-->
@@ -14,10 +15,124 @@
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-		
 	</head>
+
 	<body>
-		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-		<script src="lib/jquery/jquery.js"></script>
+		<!--辅助导航-->
+		<nav class="navbar navbar-inverse">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<!--电话-->
+					<a class="navbar-brand" href="#"><span class="glyphicon glyphicon-phone-alt"></span>028-86261949</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<!--辅助导航-->
+						<li><a href="#">首页</a></li>
+						<li><a href="#">小强</a></li>
+						<li><a href="#">赶快充值</a></li>
+						<li><a href="#">注销</a></li>
+						<li><a href="#">帮助</a></li>
+						<li><a href="#">联系客服</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--主导航-->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<!--切换菜单-->
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_Menu" aria-expanded="false">
+				        <span class="sr-only">Toggle navigation</span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				        <span class="icon-bar"></span>
+				    </button>
+				    <!--LOGO-->
+					<a class="navbar-brand" href="#"><img src="static/images/logo.png"/></a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="main_Menu">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">首页 </a>
+						</li>
+						<li><a href="#">我要投资</a></li>
+						<li><a href="#">我要借款</a></li>
+						<li><a href="#">个人中心</a></li>
+						<li><a href="#">新手指引</a></li>
+						<li><a href="#">关于我们</a></li>
+					</ul>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+
+		<!--轮播图-->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+		      <img src="static/images/banner01.jpg" alt="广告1">
+		      <div class="carousel-caption"></div>
+		    </div>
+		    <div class="item">
+		      <img src="static/images/banner02.jpg" alt="广告2">
+		      <div class="carousel-caption"></div>
+		    </div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		  </a>
+		</div>
+		
+		<!--三大特色-->
+		<div class="container" id="feature">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<h4>投资理财</h4>
+                    <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<h4>投资理财</h4>
+                    <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-xs-12">
+					<h4>投资理财</h4>
+                    <p>稳定投资、高收益、短期限，易融贷先行赔付，保障投资人权益。</p>
+				</div>
+			</div>
+		</div>
+		
+		<!--投资信息列表-->
+		<!--文章信息-->
+		<!--页脚-->
 	</body>
+    <!--引入jquery库-->
+    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <!--引入bootstrap核心js库-->
+    <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
