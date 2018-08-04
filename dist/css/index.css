@@ -80,7 +80,29 @@
   line-height: 26px;
   border-bottom: dotted 1px #ccc;
 }
-.panel-default .panel-body ul li span {
-  float: right;
-  color: #999;
+.panel-default .panel-body ul li a {
+  color: #555555;
+}
+.panel-default .panel-body ul li a:hover {
+  color: #00a8ff;
+}
+.panel-default .panel-body .el-table thead th {
+  color: #999999;
+}
+.panel-default .panel-body .el-table tbody tr td {
+  font-size: 16px;
+  vertical-align: middle;
+}
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+.el-footer .weobo p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.el-footer img {
+  max-width: 100%;
 }
