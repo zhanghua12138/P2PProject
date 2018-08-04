@@ -1,5 +1,7 @@
 @colorWhite:#fff;
 @colorBlue:#00a8ff;
+@bgPath:"../../../static/images/";
+
 //辅助导航
 .navbar{
     border-radius:0px;
@@ -14,7 +16,8 @@
             font-size: 18px;
             margin-right: 10px;
         }
-    }  
+    }
+    
     .navbar-nav{
         &>li{
             &>a{
@@ -31,6 +34,7 @@
 
 //主导航
 .navbar-default{
+
     .navbar-nav{
         &>li{
             &>a{
@@ -52,7 +56,7 @@
     .row{
         
         div{
-            background: url(../../../static/images/feature01.png) no-repeat left center;
+            background: url("@{bgPath}feature01.png") no-repeat left center;
             min-height: 65px;
             padding-left: 80px;
             
@@ -62,11 +66,68 @@
         }
         
         div:nth-of-type(2){
-           background-image: url(../../../static/images/feature02.png); 
+           background-image: url("@{bgPath}feature02.png"); 
         }
         
         div:nth-of-type(3){
-           background-image: url(../../../static/images/feature03.png); 
+           background-image: url("@{bgPath}feature03.png"); 
+        }
+    }
+}
+
+
+//投资列表
+#invest,#article{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+//公共的panel
+.panel{
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.panel-default{
+    border: none;
+    
+    &>.panel-heading{
+        background-color: transparent;
+        padding: 0px;
+        
+        display: flex;
+        justify-content: space-between;
+        
+        h1{
+            font-size: 24px;
+            margin-bottom: 0px;
+            padding-bottom: 10px;
+            color: @colorBlue;
+            font-weight: bold;
+            border-bottom: 3px solid @colorBlue;
+        }
+        
+        p{
+            margin: 0px;
+            padding: 0px;
+            line-height: 60px;
+        }
+    }
+    
+    .panel-body{
+        
+        ul{
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+            
+            li{
+                line-height: 26px;
+                border-bottom: dotted 1px #ccc;
+                
+                span{
+                    float: right;
+                    color: #999;
+                }
+            }
         }
     }
 }

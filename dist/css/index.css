@@ -27,7 +27,7 @@
   background-color: #f0f0f0;
 }
 #feature .row div {
-  background: url(../../../static/images/feature01.png) no-repeat left center;
+  background: url("../../../static/images/feature01.png") no-repeat left center;
   min-height: 65px;
   padding-left: 80px;
 }
@@ -35,8 +35,52 @@
   font-weight: bold;
 }
 #feature .row div:nth-of-type(2) {
-  background-image: url(../../../static/images/feature02.png);
+  background-image: url("../../../static/images/feature02.png");
 }
 #feature .row div:nth-of-type(3) {
-  background-image: url(../../../static/images/feature03.png);
+  background-image: url("../../../static/images/feature03.png");
+}
+#invest,
+#article {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.panel {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.panel-default {
+  border: none;
+}
+.panel-default > .panel-heading {
+  background-color: transparent;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.panel-default > .panel-heading h1 {
+  font-size: 24px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  color: #00a8ff;
+  font-weight: bold;
+  border-bottom: 3px solid #00a8ff;
+}
+.panel-default > .panel-heading p {
+  margin: 0px;
+  padding: 0px;
+  line-height: 60px;
+}
+.panel-default .panel-body ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+.panel-default .panel-body ul li {
+  line-height: 26px;
+  border-bottom: dotted 1px #ccc;
+}
+.panel-default .panel-body ul li span {
+  float: right;
+  color: #999;
 }
