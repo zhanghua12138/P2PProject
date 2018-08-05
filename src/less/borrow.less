@@ -1,0 +1,55 @@
+//引入header
+@import url("header.less");
+#borrowList{
+    margin: 30px auto;
+    .borrowList-title{
+        font-size: 24px;
+        background-color: #ec7e20;
+        font-weight: 300;
+        line-height: 48px;
+        padding-left: 20px;
+        color: #FFFFFF;
+        &.credit{
+            background-color: #40d47e;
+        }
+        &.home{
+            background-color: #2ca2ee;
+        }
+    }
+    .borrowList-content{
+       background-color: #f9f9f9;
+       padding: 14px;
+       font-size: 16px; 
+       .text-primary,.help-block{
+           font-size: 13px;
+       }
+       ul{
+           li{
+               color: #555;
+               font-size: 14px;
+               list-style: none;
+               padding-left: 20px;
+               margin-top: 5px;
+               background: url("@{bgPath}sequare.png") left center no-repeat;
+           }
+       }
+       .borrow-apply{
+            border-radius: 20px;
+            background: #00a8ff;
+            color: #fff;
+            display: block;
+            margin: 0px auto;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center; 
+            text-decoration: none;
+            &:hover{
+                background-color: #f60;
+            }
+       }
+            
+    }
+}
+//引入页脚
+@import url("footer.less");

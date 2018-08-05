@@ -1,0 +1,94 @@
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 26px;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+/*工具提示的图片*/
+.tooltip img {
+  width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
+}
+#borrowList {
+  margin: 30px auto;
+}
+#borrowList .borrowList-title {
+  font-size: 24px;
+  background-color: #ec7e20;
+  font-weight: 300;
+  line-height: 48px;
+  padding-left: 20px;
+  color: #FFFFFF;
+}
+#borrowList .borrowList-title.credit {
+  background-color: #40d47e;
+}
+#borrowList .borrowList-title.home {
+  background-color: #2ca2ee;
+}
+#borrowList .borrowList-content {
+  background-color: #f9f9f9;
+  padding: 14px;
+  font-size: 16px;
+}
+#borrowList .borrowList-content .text-primary,
+#borrowList .borrowList-content .help-block {
+  font-size: 13px;
+}
+#borrowList .borrowList-content ul li {
+  color: #555;
+  font-size: 14px;
+  list-style: none;
+  padding-left: 20px;
+  margin-top: 5px;
+  background: url("../../../static/images/sequare.png") left center no-repeat;
+}
+#borrowList .borrowList-content .borrow-apply {
+  border-radius: 20px;
+  background: #00a8ff;
+  color: #fff;
+  display: block;
+  margin: 0px auto;
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+}
+#borrowList .borrowList-content .borrow-apply:hover {
+  background-color: #f60;
+}
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+.el-footer .weobo p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.el-footer img {
+  max-width: 160px;
+}

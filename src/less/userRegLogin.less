@@ -1,0 +1,31 @@
+//引入header
+@import url("header.less");
+
+//登录和注册的样式
+.panel{
+  margin-top: 20px;
+  
+  form{
+      width: 60%;
+      margin: 0px auto;
+      
+      button{
+          width: 160px;
+      }
+  }
+}
+
+@media all and (max-width: 620px){
+    .panel{
+      form{
+          width: 100%;
+          
+          button{
+              width: 100%;
+          }
+      }
+    }
+}
+
+//引入页脚
+@import url("footer.less");
