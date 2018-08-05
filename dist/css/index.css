@@ -17,6 +17,10 @@
   color: #00a8ff;
   text-decoration: underline;
 }
+/*工具提示的图片*/
+.tooltip img {
+  width: 120px;
+}
 .navbar-default .navbar-nav > li > a {
   line-height: 40px;
   min-width: 80px;
@@ -93,6 +97,11 @@
   font-size: 16px;
   vertical-align: middle;
 }
+@media all and (max-width: 620px) {
+  .hide620 {
+    display: none;
+  }
+}
 .el-footer {
   background-color: #f8f8f8;
   margin: 20px 0px 20px 0px;
@@ -104,5 +113,5 @@
   padding-left: 10px;
 }
 .el-footer img {
-  max-width: 100%;
+  max-width: 160px;
 }

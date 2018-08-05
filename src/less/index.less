@@ -1,56 +1,4 @@
-@colorWhite:#fff;
-@colorBlue:#00a8ff;
-@bgPath:"../../../static/images/";
-@size16:16px;
-//辅助导航
-.navbar{
-    border-radius:0px;
-    margin-bottom:0px;
-}
-.navbar-inverse{
-    .navbar-brand{
-        color: @colorWhite;
-        font-size: 26px;
-        
-        span{
-            font-size: 18px;
-            margin-right: 10px;
-        }
-    }
-    
-    .navbar-nav{
-        &>li{
-            &>a{
-                color:@colorWhite;
-                
-                &:hover{
-                    color: @colorBlue;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-//主导航
-.navbar-default{
-
-    .navbar-nav{
-        &>li{
-            &>a{
-                line-height: 40px;
-                min-width: 80px;
-                font-size: @size16;
-                text-align: center;
-                
-                &:hover{
-                    background-color: #f0f0f0;
-                }
-            }
-        }
-    }
-}
-
+@import url("header.less");
 //三大特色
 #feature{
     .row{
@@ -128,6 +76,7 @@
                 }  
             }
         }
+        //投资列表
         .el-table{
             thead{
                 th{
@@ -145,20 +94,11 @@
         }
     }
 }
-//首页尾部
-.el-footer{
-    background-color: #f8f8f8;
-    margin: 20px 0px 20px 0px;
-    padding-top: 30px;
-    .weobo{
-        p{
-           padding-bottom: 15px;
-           font-size: 14px; 
-           padding-left: 10px;
-        }
-    }
-    img{
-        max-width: 100%;
+//投资列表兼容小屏和超小4
+@media all and (max-width:620px){
+    .hide620{
+        display: none;
     }
 }
+@import url("footer.less");
     

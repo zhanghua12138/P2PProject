@@ -1,0 +1,13 @@
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+.el-footer .weobo p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.el-footer img {
+  max-width: 160px;
+}
