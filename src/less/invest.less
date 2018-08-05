@@ -1,0 +1,50 @@
+//引入header样式
+@import url("header.less");
+//投资列表
+#invest{
+    p{
+        margin: 0px;
+        padding: 8px 15px;
+        color: #777777;
+    }
+    .col-lg-11{
+        .btn{
+            padding: 6px 30px;
+            border-right: transparent;
+            border-radius: 0px;
+            &:nth-child(1){
+            border-radius: 4px 0 0 4px;
+            }
+            &:nth-child(3){
+                border-radius: 0 4px 4px 0;
+                border-right: #CCCCCC 1px solid;
+            }
+        }
+        
+    }
+}
+//投资信息
+.panel-body{
+    padding: 20px 0px;
+    .table{
+        font-size: 16px;
+        thead{
+            tr{
+                th{
+                    color: #999999;
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:620px) {
+    .panel-body{
+        min-width: 390px;
+    }
+	.hide620{
+	    display: none;
+	}	
+}
+//引入footer样式
+@import url("footer.less");

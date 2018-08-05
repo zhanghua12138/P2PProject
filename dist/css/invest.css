@@ -1,0 +1,80 @@
+.navbar {
+  border-radius: 0px;
+  margin-bottom: 0px;
+}
+.navbar-inverse .navbar-brand {
+  color: #fff;
+  font-size: 26px;
+}
+.navbar-inverse .navbar-brand span {
+  font-size: 18px;
+  margin-right: 10px;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-inverse .navbar-nav > li > a:hover {
+  color: #00a8ff;
+  text-decoration: underline;
+}
+/*工具提示的图片*/
+.tooltip img {
+  width: 120px;
+}
+.navbar-default .navbar-nav > li > a {
+  line-height: 40px;
+  min-width: 80px;
+  font-size: 16px;
+  text-align: center;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #f0f0f0;
+}
+#invest p {
+  margin: 0px;
+  padding: 8px 15px;
+  color: #777777;
+}
+#invest .col-lg-11 .btn {
+  padding: 6px 30px;
+  border-right: transparent;
+  border-radius: 0px;
+}
+#invest .col-lg-11 .btn:nth-child(1) {
+  border-radius: 4px 0 0 4px;
+}
+#invest .col-lg-11 .btn:nth-child(3) {
+  border-radius: 0 4px 4px 0;
+  border-right: #CCCCCC 1px solid;
+}
+.panel-body {
+  padding: 20px 0px;
+}
+.panel-body .table {
+  font-size: 16px;
+}
+.panel-body .table thead tr th {
+  color: #999999;
+  font-weight: bold;
+}
+@media all and (max-width: 620px) {
+  .panel-body {
+    min-width: 390px;
+  }
+  .hide620 {
+    display: none;
+  }
+}
+.el-footer {
+  background-color: #f8f8f8;
+  margin: 20px 0px 20px 0px;
+  padding-top: 30px;
+}
+.el-footer .weobo p {
+  padding-bottom: 15px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.el-footer img {
+  max-width: 160px;
+}
