@@ -21,7 +21,7 @@
 
 	<body>
 		<?php
-		   include_once("./header.html");
+		   include_once("./header.php");
 		?>
 		<!--轮播图-->
 		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">

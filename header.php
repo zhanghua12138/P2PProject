@@ -46,22 +46,22 @@
 				<div class="collapse navbar-collapse" id="main_Menu">
 					<ul class="nav navbar-nav">
 						<li class="active">
-							<a href="#">首页 </a>
+							<a href="index.php?menuid=0">首页 </a>
 						</li>
 						<li>
-							<a href="invest.php">我要投资</a>
+							<a href="invest.php?menuid=1">我要投资</a>
 						</li>
 						<li>
-							<a href="borrow.php">我要借款</a>
+							<a href="borrow.php?menuid=2">我要借款</a>
 						</li>
 						<li>
-							<a href="#">个人中心</a>
+							<a href="#?menuid=3">个人中心</a>
 						</li>
 						<li>
-							<a href="#">新手指引</a>
+							<a href="#?menuid=4">新手指引</a>
 						</li>
 						<li>
-							<a href="#">关于我们</a>
+							<a href="#?menuid=5">关于我们</a>
 						</li>
 					</ul>
 				</div>
@@ -69,3 +69,11 @@
 			</div>
 			<!-- /.container-fluid -->
 		</nav>
+		<!--引入jquery库-->
+	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var url = location.href;
+		
+		console.log(url);
+		
+	</script>
