@@ -31,7 +31,7 @@
         	<div class="panel panel-default">
 			  <div class="panel-heading">用户登录</div>
 			  <div class="panel-body">
-			     <form id="loginForm" action="#">
+			     <form id="loginForm" action="#" method="post">
 					  <div class="form-group">
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">

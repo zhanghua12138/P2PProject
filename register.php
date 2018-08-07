@@ -31,7 +31,7 @@
         	<div class="panel panel-default">
 			  <div class="panel-heading">用户注册向导</div>
 			  <div class="panel-body">
-			     <form id="regForm" action="#">
+			     <form id="regForm" action="api/userAdd.php" method="post">
 					  <div class="form-group">
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
@@ -73,7 +73,23 @@
 			</div>
         </div>
         <!--模板内容的结束-->
-		
+		<!--注册成功或者失败的模态框-->
+		<div class="modal fade" id="regLoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title">标题</h4>
+		      </div>
+		      <div class="modal-body">
+		      	内容
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
 		<?php
 		   include_once("./footer.html");
 		?>

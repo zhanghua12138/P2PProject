@@ -106,15 +106,40 @@ $(function() {
             // 获取验证的表单实例
             var $form = $(e.target);
             // 获取表单验证实例
-            var bv = $form.data('bootstrapValidator');
-            
+            var bv = $form.data('bootstrapValidator'); 
             // 使用ajax发送提交表单的数据请求
             var postData=$form.serialize();
             // $.post("提交的url地址",对象形式或者字符串拼接的数据,callback回调函数, 数据返回的类型)
             $.post($form.attr('action'), postData ,function(result) {
                 console.log(result);
                 //根据ajax返回的结果处理前端的业务逻辑
-                //
+                $("#regLoginModal .modal-title").text("用户注册提示");
+                if(result.isSuccess){
+                	//注册成功
+                	//显示蒙层（模态框），并倒计时5秒跳转得到登录页面
+                	//模态框的语法： $('#myModal').modal(options) 
+                	//options选项  show boolean	true	模态框初始化之后就立即显示出来。
+                	
+                	$("#regLoginModal .modal-body").html("<a href='../../login.php'><span class='glyphicon glyphicon-ok'></span>"+result.msg+"<span id='count'>5</span> 秒后自动跳转,点击立即跳转</a>");
+                	$("#regLoginModal").modal("show");
+                	//倒计时效果的实现
+                	//setInterval(callback,间隔时间) 方法可按照指定的周期（以毫秒计）
+                	var num=5;
+                	var timeid=setInterval(function () {
+                		num--;
+                		$("#count").text(num);
+                		if(num==0){
+                			clearInterval(timeid);
+                			location.href="login.php";
+                		}
+                	},1000);
+                }
+                else{
+                	//注册失败
+                	$("#regLoginModal .modal-body").html("<span class='glyphicon glyphicon-remove'></span>"+result.msg);
+                	$("#regLoginModal").modal("show");
+                	console.log(result.msg); //前端人员解决问题查看原因
+                }
             }, 'json');
         });
     //对那个表单做验证,登录页面验证
