@@ -41,7 +41,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="borrow_apply.html" class="borrow-apply">
+						<a href="#" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
@@ -62,7 +62,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="borrow_apply.html" class="borrow-apply">
+						<a href="#" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
@@ -82,7 +82,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="borrow_apply.html" class="borrow-apply">
+						<a href="#" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
