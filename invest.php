@@ -24,7 +24,7 @@
 	<body>
 		<!--头部-->
 		<?php
-		   include_once("./header.html");
+		   include_once("./header.php");
 		?>
 		<!--内容部分-->
 		<div class="container" id="invest">

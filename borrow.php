@@ -20,7 +20,7 @@
 
 	<body>
 		<?php
-		 	include_once("./header.html");
+		 	include_once("./header.php");
 		?>
 		<!--页面内容-->
 		<!--借款首页-->

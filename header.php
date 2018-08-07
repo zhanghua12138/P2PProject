@@ -73,7 +73,16 @@
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript">
 		var url = location.href;
-		
-		console.log(url);
-		
+		var menuid = url.split('=')[1];
+		if(menuid==1){
+			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
+		}else if(menuid==2){
+			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
+		}else if(menuid==3){
+			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
+		}else if(menuid==4){
+			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
+		}else if(menuid==5){
+			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
+		}
 	</script>

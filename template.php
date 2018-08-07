@@ -21,7 +21,7 @@
 	
 	<body>
 		<?php
-		 	include_once("./header.html");
+		 	include_once("./header.php");
 		?>
 		<!--页面内容-->
 		<div class="container" id="pstemp">
@@ -35,6 +35,4 @@
 	</body>
 	<!--自定义特效-->
     <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
-    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="dist/js/collapse.js" type="text/javascript" charset="utf-8"></script>
 </html>
