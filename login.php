@@ -8,6 +8,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 		<!--引入bootstrap核心样式-->
 		<link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css"/>
+		<!--引入bootstrapValidator的核心样式-->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrapvalidator/dist/css/bootstrapValidator.min.css"/>
 		<!--引入图标字体-->
 		<link rel="stylesheet" type="text/css" href="lib/fontawesome/css/fontawesome-all.min.css"/>	
 		<!--自定义样式-->
@@ -29,7 +31,7 @@
         	<div class="panel panel-default">
 			  <div class="panel-heading">用户登录</div>
 			  <div class="panel-body">
-			     <form>
+			     <form id="loginForm" action="#">
 					  <div class="form-group">
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
@@ -38,7 +40,7 @@
 					    <label for="password1">登录密码</label>
 					    <input type="password" class="form-control" name="password1" id="password1" placeholder="">
 					  </div>
-					  <button type="submit" class="btn btn-danger">立即登录</button>
+					  <button type="submit" class="btn btn-danger">立即登录</button>  <a href="register.php">没有账号去注册</a>
 				</form>
 			  </div>
 			</div>
@@ -53,6 +55,10 @@
     <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
     <!--引入bootstrap核心js库-->
     <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--引入bootstrapValidator的插件js库-->
+    <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js" type="text/javascript" charset="utf-8"></script>
     <!--自定义特效-->
-    <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/js/p2pEffects.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--表单验证的参数配置-->
+    <script src="dist/js/formValidator.min.js" type="text/javascript" charset="utf-8"></script>
 </html>
