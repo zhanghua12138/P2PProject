@@ -18,14 +18,48 @@
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
 	</head>
-
+	
 	<body>
 		<?php
 		 	include_once("./header.html");
 		?>
 		<!--页面内容-->
 		<div class="container">
-			
+			<div class="col-sm-3">
+				<ul id="menu" class="list-group">
+					<li class="list-group-item ${pageScope.currentMenu=='bid' ? 'active' :'' }">
+						<a href="bid_list.html"> <span>投资项目</span></a>
+					</li>
+					<li class="list-group-item">
+						<a href="javascript:;"><span>借款项目</span></a>
+						<ul>
+							<li><a href="bid_request_list.html"><span>借款项目</span></a></li>
+							<li><a href="borrowBidReturn_list11.html"><span>还款明细</span></a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<a href="#"><span class="text-title">我的账户</span></a>
+						<ul class="in">
+							<li class="active"><a href="personal.html">账户信息</a></li>
+							<li><a href="realAuth.html">实名认证</a></li>
+							<li><a href="#">银行卡管理</a></li>
+							<li><a href="#">登录记录</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<a href="#"><span>资产详情</span></a>
+						<ul class="in">
+							<li><a href="accountFlow_list.html">账户流水</a></li>
+							<li><a href="recharge_list.html">充值明细</a></li>
+							<li><a>提现记录</a></li>
+							<li><a>收款明细</a></li>
+						</ul>
+					</li>
+					<li class="list-group-item">
+						<a href="userInfo.html"> <span>个人资料</span></a>
+					</li>
+				</ul>
+			</div>
 		</div>
 		<?php
 			include_once("./footer.html");
