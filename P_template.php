@@ -27,9 +27,12 @@
 		<script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--页面内容-->
 		<div class="container" id="pstemp">
-			<?php
-		 	include_once("./psTemplate.html");
-			?>
+			<div class="row">
+				<?php
+				 	include_once("./psTemplate.html");
+				?>
+			</div>
+			
 		</div>
 		<?php
 			include_once("./footer.html");

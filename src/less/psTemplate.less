@@ -1,32 +1,23 @@
-//引入header样式
+//引入header样式 
 @import url("header.less");
 #pstemp{
-    .col-sm-3{
-        padding: 10px 0;
-    }
-    .panel-body{
-        padding: 0;
-        .list-group{
-            margin-bottom: 0;
-        }
-        .container-fluid{
-            padding-right: 0;
-            text-indent: 2em;
-            .list-group-item{
-                border-left: none;
-                border-right: none;
-            }
-            .list-group-item:first-child{
-                border-top-left-radius: 0;
-                border-top-right-radius: 0;
-                border-top: none;
-            }
-            .list-group-item:last-child{
-                border-bottom-left-radius: 0;
-                border-bottom-right-radius: 0; 
+    margin-top: 10px;
+    row{
+        .panel-body{
+            ul{
+                list-style: none;
+                li{
+                    line-height: 26px;
+                    a{
+                        &:focus{
+                            font-weight: bold;
+                            color: orangered;
+                        }
+                    }
+                }
             }
         }
     }
 }
-//引入footer样式
+//引入footer样式 
 @import url("footer.less");
