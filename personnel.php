@@ -18,14 +18,14 @@
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-	    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-	    <script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
+	    
 	</head>
 	
 	<body>
 		<?php
 		 	include_once("./header.php");
 		?>
+		<script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--页面内容-->
 		<div class="container" id="pstemp">
 			<?php
@@ -48,6 +48,4 @@
 	</body>
 	<!--自定义特效-->
     <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
-    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="dist/js/collapse.js" type="text/javascript" charset="utf-8"></script>
 </html>

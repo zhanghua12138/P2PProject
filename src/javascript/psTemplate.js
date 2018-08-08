@@ -1,13 +1,12 @@
 $(function(){
 	$.get("../../api/checkState.php",function(result){
-		console.log(result);
 		if(result.isSuccess){
-			alert("欢迎您");
+			alert("欢迎"+result.username);
 		}
 		else{
-			alert(result.isSuccess);
+			alert("请先登录");
 			location.href=("login.php");
 		}
-	})
+	},'json')
 	
 })
