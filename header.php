@@ -14,7 +14,7 @@
 						<li><a href="index.php"><span class="fa fa-home"></span>首页</a></li>
 						<!--<li><a href="login.php"><span class="fa fa-user"></span>小强</a></li>
 						<li><a href="register.php"><span class="fa fa-money-bill-alt"></span>赶快充值</a></li>-->
-						<li><a href="#"><span class="fa fa-sign-out-alt">注销</a></li>
+						<li><a href="api/loginOut.php"><span class="fa fa-sign-out-alt">注销</a></li>
 						<li><a href="login.php"><span class="fa fa-sign-in-alt"></span>立即登录</a></li>
 						<li><a href="register.php"><span class="fa fa-user"></span>立即注册</a></li>	
 						<li><a href="#"><span class="fa fa-question-circle">帮助</a></li>
