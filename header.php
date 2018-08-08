@@ -11,12 +11,12 @@
 				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav navbar-right">
 						<!--辅助导航-->
-						<li><a href="index.php"><span class="fa fa-home"></span>首页</a></li>
+						<li id="homepage"><a href="index.php"><span class="fa fa-home"></span>首页</a></li>
 						<!--<li><a href="login.php"><span class="fa fa-user"></span>小强</a></li>
-						<li><a href="register.php"><span class="fa fa-money-bill-alt"></span>赶快充值</a></li>-->
+						<li><a href="register.php"><span class="fa fa-money-bill-alt"></span>赶快充值</a></li>
 						<li><a href="api/loginOut.php"><span class="fa fa-sign-out-alt">注销</a></li>
 						<li><a href="login.php"><span class="fa fa-sign-in-alt"></span>立即登录</a></li>
-						<li><a href="register.php"><span class="fa fa-user"></span>立即注册</a></li>	
+						<li><a href="register.php"><span class="fa fa-user"></span>立即注册</a></li>-->	
 						<li><a href="#"><span class="fa fa-question-circle">帮助</a></li>
 						<li id="contanctus" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<img src='static/images/contract.png'/>"><a href="#"><span class="fab fa-weixin"></span>联系客服</a></li>
 					</ul>
@@ -55,7 +55,7 @@
 							<a href="borrow.php?menuid=2">我要借款</a>
 						</li>
 						<li>
-							<a href="#?menuid=3">个人中心</a>
+							<a href="personnel.php?menuid=3">个人中心</a>
 						</li>
 						<li>
 							<a href="#?menuid=4">新手指引</a>
@@ -72,4 +72,4 @@
 		<!--引入jquery库-->
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="dist/js/navtoggle.min.js"></script>
-	<script type="text/javascript" src=""></script>
+	<script type="text/javascript" src="src/javascript/editUsername.js"></script>

@@ -196,12 +196,12 @@ $(function() {
             var postData=$form.serialize();
             // $.post("提交的url地址",对象形式或者字符串拼接的数据,callback回调函数, 数据返回的类型)
             $.post($form.attr('action'), postData ,function(result) {
-                console.log(result);
+//              console.log(result);
                 //根据ajax返回的结果处理前端的业务逻辑
                 if(result.isSuccess){
                     location.href="personnel.php";
                 }else{
-                	console.log(11);
+//              	console.log(11);
                 	$("#password1").val("");
                 	$("#psdmsg").html("用户名或密码输入错误");
                 }
