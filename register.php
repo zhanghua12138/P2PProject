@@ -79,10 +79,10 @@
 		    <div class="modal-content">
 		      <div class="modal-header">
 		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">标题</h4>
+		        <h4 class="modal-title">注册结果</h4>
 		      </div>
 		      <div class="modal-body">
-		      	内容
+		      	<a href='login.php' class="regSuccess"><span class='glyphicon glyphicon-ok'></span>注册成功<span id='count'>5</span> 秒后自动跳转,点击立即跳转</a>
 		      </div>
 		    </div>
 		  </div>
