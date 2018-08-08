@@ -41,7 +41,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="#" class="borrow-apply">
+						<a href="borrow_apply.php?menuid=3" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
@@ -62,7 +62,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="#" class="borrow-apply">
+						<a href="borrow_apply.php?menuid=3" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
@@ -82,7 +82,7 @@
 							<li>身份认证</li>
 							<li>视频认证</li>
 						</ul>
-						<a href="#" class="borrow-apply">
+						<a href="borrow_apply.php?menuid=3" class="borrow-apply">
 							立刻申请
 						</a>
 					</div>
@@ -94,5 +94,5 @@
 		?>
 	</body>
 	<!--自定义特效-->
-    <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
+    <script src="dist/js/p2pEffects.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

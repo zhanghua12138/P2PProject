@@ -31,7 +31,7 @@
         	<div class="panel panel-default">
 			  <div class="panel-heading">用户登录</div>
 			  <div class="panel-body">
-			     <form id="loginForm" action="#" method="post">
+			     <form id="loginForm" action="api/checkLogin.php" method="post">
 					  <div class="form-group">
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
@@ -39,6 +39,7 @@
 					  <div class="form-group">
 					    <label for="password1">登录密码</label>
 					    <input type="password" class="form-control" name="password1" id="password1" placeholder="">
+					    <div id="psdmsg"></div>
 					  </div>
 					  <button type="submit" class="btn btn-danger">立即登录</button>  <a href="register.php">没有账号去注册</a>
 				</form>

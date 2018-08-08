@@ -198,7 +198,16 @@ $(function() {
             $.post($form.attr('action'), postData ,function(result) {
                 console.log(result);
                 //根据ajax返回的结果处理前端的业务逻辑
-                //
-            }, 'json');
+                if(result.isSuccess){
+                    location.href="personal.php";
+                }else{
+                	console.log(11);
+                	$("#password1").val("");
+                	$("#psdmsg").html("用户名或密码输入错误");
+                }
+            },'json');
         });
+        $('#loginForm input').on('focus',function(){
+        	$("#psdmsg").html("");
+        })
 });
