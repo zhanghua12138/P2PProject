@@ -1,4 +1,5 @@
 <?php
+   header("Content-Type:text/html;charset=utf-8");
    session_start(); //开启回话
         	   
    //判断登录的用户名是否存在session中

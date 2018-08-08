@@ -13,8 +13,8 @@
 						<!--辅助导航-->
 						<li><a href="index.php"><span class="fa fa-home"></span>首页</a></li>
 						<!--<li><a href="login.php"><span class="fa fa-user"></span>小强</a></li>
-						<li><a href="register.php"><span class="fa fa-money-bill-alt"></span>赶快充值</a></li>
-						<li><a href="#"><span class="fa fa-sign-out-alt">注销</a></li>-->
+						<li><a href="register.php"><span class="fa fa-money-bill-alt"></span>赶快充值</a></li>-->
+						<li><a href="#"><span class="fa fa-sign-out-alt">注销</a></li>
 						<li><a href="login.php"><span class="fa fa-sign-in-alt"></span>立即登录</a></li>
 						<li><a href="register.php"><span class="fa fa-user"></span>立即注册</a></li>	
 						<li><a href="#"><span class="fa fa-question-circle">帮助</a></li>
@@ -71,18 +71,5 @@
 		</nav>
 		<!--引入jquery库-->
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		var url = location.href;
-		var menuid = url.split('=')[1];
-		if(menuid==1){
-			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
-		}else if(menuid==2){
-			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
-		}else if(menuid==3){
-			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
-		}else if(menuid==4){
-			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
-		}else if(menuid==5){
-			$("#main_Menu .nav li").eq(menuid).addClass('active').siblings().removeClass('active');
-		}
-	</script>
+	<script type="text/javascript" src="dist/js/navtoggle.min.js"></script>
+	<script type="text/javascript" src=""></script>
