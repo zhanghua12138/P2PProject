@@ -1,3 +1,4 @@
+//个人中心墙
 $(function(){
 	$.get("../../api/checkState.php",function(result){
 		if(!result.isSuccess){
