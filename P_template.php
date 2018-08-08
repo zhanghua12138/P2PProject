@@ -12,13 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="lib/fontawesome/css/fontawesome-all.min.css"/>	
 		<!--自定义样式-->
 		<link rel="stylesheet" type="text/css" href="dist/css/min/psTemplate.min.css" />
-		<link rel="stylesheet" type="text/css" href="dist/css/min/personnel.min.css"/>
 		<!--兼容低版本的浏览器-->
 		<!--[if lt IE 9]>
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-	    
 	</head>
 	
 	<body>
@@ -32,16 +30,6 @@
 			<?php
 		 	include_once("./psTemplate.html");
 			?>
-			<div class="col-xs-9">
-				<div class="page-header">
-					<div><img class="img-thumbnail" src="static/images/head_icon.jpg"/></div>
-			        <div class="">
-			        	<p>昵 称：源代码教育</p>
-			        	<p>用户名：小强</p>
-			        	<p>最后登录时间：2016-10-25 15:30:10</p>
-			        </div>
-				</div>
-			</div>
 		</div>
 		<?php
 			include_once("./footer.html");

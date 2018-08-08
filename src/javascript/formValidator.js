@@ -199,7 +199,7 @@ $(function() {
 //              console.log(result);
                 //根据ajax返回的结果处理前端的业务逻辑
                 if(result.isSuccess){
-                    location.href="personnel.php";
+                    location.href="personnel.php?menuid=3";
                 }else{
 //              	console.log(11);
                 	$("#password1").val("");

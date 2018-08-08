@@ -17,9 +17,6 @@
 	      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 	      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 	    <![endif]-->
-	    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-	    <script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
-	    
 	</head>
 	
 	<body>
@@ -28,14 +25,9 @@
 		?>
 		<!--页面内容-->
 		<div class="container" id="pstemp">
-			<?php
-		 	include_once("./psTemplate.html");
-			?>
 		</div>
 		<?php
 			include_once("./footer.html");
 		?>
 	</body>
-	<!--自定义特效-->
-    <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
 </html>
