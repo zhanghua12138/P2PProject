@@ -84,9 +84,6 @@
 		      <div class="modal-body">
 		      	内容
 		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">关闭窗口</button>
-		      </div>
 		    </div>
 		  </div>
 		</div>
@@ -94,14 +91,8 @@
 		   include_once("./footer.html");
 		?>
 	</body>
-    <!--引入jquery库-->
-    <script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <!--引入bootstrap核心js库-->
-    <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
     <!--引入bootstrapValidator的插件js库-->
     <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js" type="text/javascript" charset="utf-8"></script>
-    <!--自定义特效-->
-    <script src="dist/js/p2pEffects.min.js" type="text/javascript" charset="utf-8"></script>
     <!--表单验证的参数配置-->
     <script src="dist/js/formValidator.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

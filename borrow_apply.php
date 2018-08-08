@@ -33,6 +33,4 @@
 			include_once("./footer.html");
 		?>
 	</body>
-	<!--自定义特效-->
-    <script src="dist/js/p2pEffects.min.js" type="text/javascript" charset="utf-8"></script>
 </html>

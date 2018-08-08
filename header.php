@@ -72,4 +72,4 @@
 		<!--引入jquery库-->
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="dist/js/navtoggle.min.js"></script>
-	<script type="text/javascript" src="src/javascript/editUsername.js"></script>
+	<script type="text/javascript" src="dist/js/editUsername.min.js"></script>

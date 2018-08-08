@@ -222,6 +222,4 @@
 		   include_once("./footer.html");
 		?>
 	</body>
-	<!--自定义特效-->
-    <script src="src/javascript/p2pEffects.js" type="text/javascript" charset="utf-8"></script>
 </html>
