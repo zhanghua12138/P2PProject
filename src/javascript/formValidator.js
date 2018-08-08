@@ -119,8 +119,6 @@ $(function() {
                 	//显示蒙层（模态框），并倒计时5秒跳转得到登录页面
                 	//模态框的语法： $('#myModal').modal(options) 
                 	//options选项  show boolean	true	模态框初始化之后就立即显示出来。
-                	
-                	$("#regLoginModal .modal-body").html("<a href='../../login.php'><span class='glyphicon glyphicon-ok'></span>"+result.msg+"<span id='count'>5</span> 秒后自动跳转,点击立即跳转</a>");
                 	$("#regLoginModal").modal("show");
                 	//倒计时效果的实现
                 	//setInterval(callback,间隔时间) 方法可按照指定的周期（以毫秒计）
@@ -207,7 +205,7 @@ $(function() {
                 }
             },'json');
         });
-        $('#loginForm input').on('focus',function(){
+        $('#loginForm input').on('keydown',function(){
         	$("#psdmsg").html("");
         })
 });
