@@ -35,6 +35,7 @@
 					  <div class="form-group">
 					    <label for="username">用户账号</label>
 					    <input type="text" class="form-control" name="username" id="username" placeholder="请输入用户名">
+					    <div id="namecheck"></div>	
 					  </div>
 					  <div class="form-group">
 					    <label for="password1">登录密码</label>

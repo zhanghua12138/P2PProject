@@ -7,11 +7,11 @@
 	$row=mysqli_fetch_assoc($rs);
 	if($row){
 		//成功
-   	  $jsonArray=["isSuccess"=>false,"msg"=>"用户名已存在"];
+   	  $jsonArray=["isSuccess"=>true,"msg"=>"用户名已存在"];
 	  echo json_encode($jsonArray);
 	}else{
 		//失败
-	  $jsonArray=["isSuccess"=>true,"msg"=>"用户名可用"];
+	  $jsonArray=["isSuccess"=>false,"msg"=>"用户名可用"];
 	  echo json_encode($jsonArray);
 	}
 ?>
