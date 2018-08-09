@@ -95,4 +95,5 @@
     <script src="lib/bootstrapvalidator/dist/js/bootstrapValidator.min.js" type="text/javascript" charset="utf-8"></script>
     <!--表单验证的参数配置-->
     <script src="dist/js/formValidator.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="dist/js/namecheck.min.js"></script>
 </html>

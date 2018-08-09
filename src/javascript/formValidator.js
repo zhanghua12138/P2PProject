@@ -109,9 +109,10 @@ $(function() {
             var bv = $form.data('bootstrapValidator'); 
             // 使用ajax发送提交表单的数据请求
             var postData=$form.serialize();
+//          console.log(postData);
             // $.post("提交的url地址",对象形式或者字符串拼接的数据,callback回调函数, 数据返回的类型)
             $.post($form.attr('action'), postData ,function(result) {
-                console.log(result);
+//              console.log(result);
                 //根据ajax返回的结果处理前端的业务逻辑
                 $("#regLoginModal .modal-title").text("用户注册提示");
                 if(result.isSuccess){
