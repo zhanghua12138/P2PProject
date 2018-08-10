@@ -82,7 +82,7 @@
 				                            100.00%
 				                
 				                    </td>
-				                    <td><a class="btn btn-danger btn-sm" href="borrow_info.html?id=1">查看</a></td>
+				                    <td><a class="btn btn-danger btn-sm" href="borrow_info.php">查看</a></td>
 				                </tr><!--第二条数据结束-->
 			            	</tbody>
 						</table>
