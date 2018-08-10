@@ -1,0 +1,25 @@
+.el-userhead {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 0px auto;
+}
+.muted {
+  color: #999;
+  font-size: 16px;
+}
+.text-info {
+  color: #09d;
+  font-size: 16px;
+}
+h3.text-info {
+  font-size: 24px;
+}
+#matMsg {
+  font-weight: bold;
+  font-size: 16px;
+}
+.panel-body th {
+  font-weight: bold;
+  font-size: 16px;
+}
