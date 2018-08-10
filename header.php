@@ -61,7 +61,7 @@
 							<a href="#?menuid=4">新手指引</a>
 						</li>
 						<li>
-							<a href="#?menuid=5">关于我们</a>
+							<a href="aboutUs.php?menuid=5">关于我们</a>
 						</li>
 					</ul>
 				</div>
