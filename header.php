@@ -45,7 +45,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="main_Menu">
 					<ul class="nav navbar-nav">
-						<li class="active">
+						<li>
 							<a href="index.php?menuid=0">首页 </a>
 						</li>
 						<li>
@@ -73,3 +73,4 @@
 	<script src="lib/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="dist/js/navtoggle.min.js"></script>
 	<script type="text/javascript" src="dist/js/editUsername.min.js"></script>
+	

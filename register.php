@@ -52,6 +52,7 @@
 					  <div class="form-group">
 					    <label for="mobile">手机号码</label>
 					    <input type="text" class="form-control" name="mobile" id="mobile" placeholder="请输入手机号码">
+					  	<div id="mobilecheck"></div>	
 					  </div>
 					  <div class="form-group">
 					    <label>用户性别</label>

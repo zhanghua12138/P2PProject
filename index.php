@@ -222,4 +222,9 @@
 		   include_once("./footer.html");
 		?>
 	</body>
+	<script type="text/javascript">
+		$(function(){
+			$("#main_Menu ul li").eq(0).addClass("active");
+		})
+	</script>
 </html>
