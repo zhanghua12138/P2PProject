@@ -1,0 +1,18 @@
+#realAuthForm input,
+#realAuthForm select {
+  width: 260px;
+}
+.idCardItem {
+  width: 160px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+  padding: 5px;
+}
+#viewExample {
+  position: relative;
+  left: 50px;
+  top: 60px;
+}
