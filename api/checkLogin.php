@@ -4,6 +4,10 @@
 	//接收数据
 	$username=$_POST["username"];
     $password=$_POST["password1"];
+	//设置默认当前时区
+	date_default_timezone_set("PRC");
+	//获取当前时间,并设置格式
+	$nowdata = date ( "Y-m-d H:i:s" );
 	$sqlStr="select * from userinfo where username='$username' and password='$password'";
 	$rs=mysqli_query($conn, $sqlStr);
 	//根据执行的结果返回json到前端
@@ -12,13 +16,21 @@
 	$row=mysqli_fetch_assoc($rs);
 	if($row){
 		//成功
-   	  $jsonArray=["isSuccess"=>true,"msg"=>"登录成功!"];
+   	  $jsonArray=["isSuccess"=>true,"msg"=>"登录成功!","time"=>$row["lastlogindate"],"当前时间"=>$nowdata];
 	  echo json_encode($jsonArray);
 	  
 	  //验证用户登录成功就创建session
-	  session_start();
+	  if($row["lastlogindate"]=="0000-00-00 00:00:00"){
+	  	session_start();
+		$_SESSION["lastlogindate"]=$row["createdate"];
+	  }else{
+	  	session_start();
+		$_SESSION["lastlogindate"]=$row["lastlogindate"];
+	  }
 	  $_SESSION["username"]=$row["username"];
 	  $_SESSION["userid"]=$row["userid"];
+	  $sqlStr1="update userinfo set lastlogindate='$nowdata' where username='$username' and password='$password'";
+	  $rs1=mysqli_query($conn, $sqlStr1);
 	}else{
 		//失败
 	  $jsonArray=["isSuccess"=>false,"msg"=>"登录失败!"];

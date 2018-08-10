@@ -45,8 +45,8 @@
 	        				</div>
 	        				<div class="col-lg-10 col-md-10 col-sm-10 col-xs-12">
 	        				    <p>昵 称：源代码教育</p>
-	        				    <p>用户名：<span id="username"></span></p>
-	        				    <p>最后登录：2016-10-25 15:30:10</p>
+	        				    <p>用户名：<span id="personName"></span></p>
+	        				    <p>最后登录：<span id="lastlogindate"></span></p>
 	        				</div>
 	        			</div>
 	        			<div class="row">
@@ -100,8 +100,11 @@
         		</div>
 			</div>	
 		</div>
+		<!--回填用户名和登录时间-->
+		<script src="dist/js/personInfo.min.js" type="text/javascript" charset="utf-8"></script>
 		<?php
 			include_once("./footer.html");
 		?>
 	</body>
+	
 </html>
