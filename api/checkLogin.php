@@ -20,15 +20,11 @@
 	  echo json_encode($jsonArray);
 	  
 	  //验证用户登录成功就创建session
-	  if($row["lastlogindate"]=="0000-00-00 00:00:00"){
-	  	session_start();
-		$_SESSION["lastlogindate"]=$row["createdate"];
-	  }else{
-	  	session_start();
-		$_SESSION["lastlogindate"]=$row["lastlogindate"];
-	  }
+  	  session_start();
+	  $_SESSION["lastlogindate"]=$row["lastlogindate"];
 	  $_SESSION["username"]=$row["username"];
 	  $_SESSION["userid"]=$row["userid"];
+	  //用当前时间修改上次登录时间,方便用户下一次登录时获取
 	  $sqlStr1="update userinfo set lastlogindate='$nowdata' where username='$username' and password='$password'";
 	  $rs1=mysqli_query($conn, $sqlStr1);
 	}else{
