@@ -23,11 +23,18 @@
 		<?php
 		 	include_once("./header.php");
 		?>
+		<!--个人中心墙-->
+		<script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--页面内容-->
-		<div class="container" id="pstemp">
-			<?php
-		 	include_once("./psTemplate.html");
-			?>
+		<div class="container" id="mainContent">
+			<div class="row">
+				<!--左边菜单-->
+				<?php
+				 	include_once("./psTemplate.html");
+				?>
+				<!--右边内容-->
+			</div>
+			
 		</div>
 		<?php
 			include_once("./footer.html");

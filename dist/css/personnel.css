@@ -34,3 +34,25 @@ body {
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #f0f0f0;
 }
+#rightCon #toggleMenu {
+  display: none;
+}
+#rightCon .panel-body {
+  padding: 30px;
+}
+#rightCon .panel-body .row:nth-child(1) img {
+  width: 80px;
+}
+#rightCon .panel-body .row:nth-child(2) {
+  font-size: 16px;
+  padding: 20px 0px;
+  margin: 10px 0px;
+  border-top: solid 1px #F0F0F0;
+}
+#rightCon .panel-body .row:nth-child(4) div {
+  margin: 10px 0px;
+}
+#rightCon .panel-body .row:nth-child(4) div .authIcon {
+  background: url("../../../static/images/shiming.png") no-repeat left center;
+  padding-left: 65px;
+}

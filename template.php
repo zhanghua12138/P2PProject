@@ -24,7 +24,7 @@
 		 	include_once("./header.php");
 		?>
 		<!--页面内容-->
-		<div class="container" id="pstemp">
+		<div class="container">
 		</div>
 		<?php
 			include_once("./footer.html");

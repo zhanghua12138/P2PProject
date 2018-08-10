@@ -1,3 +1,7 @@
+/*阻止横向出现滚动条*/
+body {
+  overflow-x: hidden;
+}
 .navbar {
   border-radius: 0px;
   margin-bottom: 0px;
@@ -30,18 +34,40 @@
 .navbar-default .navbar-nav > li > a:hover {
   background-color: #f0f0f0;
 }
-#pstemp {
+#mainContent {
   margin-top: 10px;
 }
-#pstemp .panel-body ul {
+#mainContent #leftMenu .panel-body ul {
   list-style: none;
 }
-#pstemp .panel-body ul li {
+#mainContent #leftMenu .panel-body ul li {
   line-height: 26px;
 }
-#pstemp .panel-body ul li a:focus {
+#mainContent #leftMenu .panel-body ul li a:focus {
   font-weight: bold;
   color: orangered;
+}
+@media all and (max-width: 768px) {
+  #mainContent {
+    position: relative;
+    left: 0px;
+    transition: all 0.8s ease-in-out;
+    min-height: 900px;
+  }
+  #mainContent #leftMenu {
+    position: absolute;
+    left: 0px;
+  }
+  #mainContent #rightCon {
+    position: absolute;
+    right: -50%;
+  }
+  #mainContent #rightCon #toggleMenu {
+    display: inline-block;
+  }
+  #mainContent.active {
+    left: -50%;
+  }
 }
 .el-footer {
   background-color: #f8f8f8;

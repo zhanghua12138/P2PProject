@@ -28,14 +28,16 @@
 		<!--个人中心墙-->
 		<script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
 		<!--页面内容-->
-		<div class="container" id="pstemp">
+		<div class="container" id="mainContent">
 			<div class="row">
-			
+				<!--左边菜单导航-->
 				<?php
 			 	include_once("./psTemplate.html");
 				?>
-				<div class="col-xs-9" id="rightPart">
-					<div class="panel panel-default">
+				<!--右边内容,个人中心内容-->
+				<div class="col-sm-9 col-xs-12" id="rightCon">
+        			<div class="panel panel-default">
+					  <button type="button" id="toggleMenu" class="btn btn-primary btn-xs">菜单切换</button>
 					  <div class="panel-body">
 					    <div class="row">
 	        				<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
@@ -94,7 +96,8 @@
 	        			</div>
 					  </div>
 					</div>
-				</div>
+        			
+        		</div>
 			</div>	
 		</div>
 		<?php
