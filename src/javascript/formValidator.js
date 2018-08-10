@@ -200,7 +200,6 @@ $(function() {
                 if(result.isSuccess){
                     location.href="personnel.php?menuid=3";
                 }else{
-//              	console.log(11);
                 	$("#password1").val("");
                 	$("#psdmsg").html("用户名或密码输入错误");
                 }
