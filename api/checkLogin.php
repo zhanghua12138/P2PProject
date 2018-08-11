@@ -24,6 +24,7 @@
 	  $_SESSION["lastlogindate"]=$row["lastlogindate"];
 	  $_SESSION["username"]=$row["username"];
 	  $_SESSION["userid"]=$row["userid"];
+	  $_SESSION["realname"]=$row["realname"];
 	  //用当前时间修改上次登录时间,方便用户下一次登录时获取
 	  $sqlStr1="update userinfo set lastlogindate='$nowdata' where username='$username' and password='$password'";
 	  $rs1=mysqli_query($conn, $sqlStr1);

@@ -1,7 +1,10 @@
 $(function(){
 	//导航栏切换效果
 	var url = location.href;//获取网页地址
-	var menuid = url.split('?')[1].substr(7);//获取当前菜单的id
+	var menuid = url.split('?')[1]//获取当前菜单的id
+	if(menuid){
+		menuid= menuid.substring(7,8);
+	}
 //	console.log(menuid);
 	//通过不同的id切换菜单样式
 	if(menuid==1){

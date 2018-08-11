@@ -19,12 +19,12 @@
 	//获取当前时间,并设置格式
 	$nowdata = date ( "Y-m-d H:i:s" );
 	//构造sql语句
-   //获取用户id
+   //获取用户姓名
    session_start();
-   $userid=$_SESSION["userid"];
+   $realname=$_SESSION["realname"];
    
    //3. 构造sql语句
-   $sqlStr="insert into borrowInfo(borrowType,borrowAmount,currentRate,monthes2Return,repayment,minAmount,maxAmount,rewardAmount,disableDays,borrowTitle,description,userid,borrowDate) values('$borrowType',$borrowAmount,$currentRate,$monthes2Return,'$repayment',$minAmount,$maxAmount,$rewardAmount,$disableDays,'$borrowTitle','$description',$userid,'$nowdata')";
+   $sqlStr="insert into borrowInfo(borrowType,borrowAmount,currentRate,monthes2Return,repayment,minAmount,maxAmount,rewardAmount,disableDays,borrowTitle,description,userid,borrowDate) values('$borrowType',$borrowAmount,$currentRate,$monthes2Return,'$repayment',$minAmount,$maxAmount,$rewardAmount,$disableDays,'$borrowTitle','$description','$realname','$nowdata')";
    
    //4. 执行sql语句并返回执行的结果
    //insert语句返回一个布尔值，执行成功则返回true，否则返回 false
