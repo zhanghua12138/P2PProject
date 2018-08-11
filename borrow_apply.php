@@ -72,10 +72,10 @@
 										<label class="control-label">
 											借款类型
 										</label>
-										<select class="form-control" name="monthes2Return">
-											<option value="1">信用贷</option>
-											<option value="2">车易贷</option>
-											<option value="3">房易贷</option>
+										<select class="form-control" name="borrowType">
+											<option value="信用贷">信用贷</option>
+											<option value="车易贷">车易贷</option>
+											<option value="房易贷">房易贷</option>
 										</select>
 									</div>
 									<div class="form-group">
@@ -118,11 +118,11 @@
 											还款方式
 										</label>
 										<label class="radio-inline">
-											<input type="radio" value="0" checked="checked" name="inlineRadioOptions" />
+											<input type="radio" value="按月分期" checked="checked" name="repayment" />
 											按月分期
 										</label>
 										<label class="radio-inline">
-											<input type="radio" value="1" name="inlineRadioOptions" />
+											<input type="radio" value="按月到期" name="repayment" />
 											按月到期
 										</label>
 									</div>
