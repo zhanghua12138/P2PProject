@@ -241,10 +241,10 @@ $(function() {
                         notEmpty: {
                             message: '必填'
                         },
-                        //数字
-                        digits: {
-                            message: '只能填写数字'
-                        }
+                        regexp: {
+				          regexp: /^\d+(\.\d+)?$/i,
+				          message: '只能填写数字。'
+	                    }
                     }
                 },
                 //最小投标
@@ -280,10 +280,10 @@ $(function() {
                         notEmpty: {
                             message: '必填'
                         },
-                        //数字
-                        digits: {
-                            message: '只能填写数字'
-                        }
+                        regexp: {
+				          regexp: /^\d+(\.\d+)?$/i,
+				          message: '只能填写数字。'
+	                    }
                     }
                 },
                 //借款标题
@@ -320,7 +320,7 @@ $(function() {
             // 获取表单验证实例
             var bv = $form.data('bootstrapValidator');            
             // 使用ajax发送提交表单的数据请求
-            var postUrl="api/userAdd.php";
+            var postUrl="api/borrowAdd.php";
             //juqery中封装的批量取值变量并拼接字符串的方法
             //.serialize() 方法创建以标准 URL 编码表示的文本字符串。
             //拼接的结果如下： username=webadmin&password1=123456&password2=123456&realname=%E5%BC%A0%E4%B8%89%E7%96%AF&mobile=15620558001&sex=%E7%94%B7&isAgree=on
@@ -331,6 +331,14 @@ $(function() {
             $.post(postUrl, postData ,function(result) {
                 console.log("服务器返回结果",result);
                 //根据ajax返回的结果处理前端的业务逻辑 {isSuccess: true, msg: "用户注册成功!"}
+                 if(result.isSuccess){
+                	alert(result.msg+"请等待平台审核通过!");
+                	location.href="#"; //本来应该跳转到会员中心当前用户申请的项目列表
+                }
+                else{
+                	alert(result.msg);
+                	return false;
+                }
             }, 'json');
         });
 });
