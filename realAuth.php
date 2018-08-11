@@ -36,6 +36,7 @@
 				<!--右边内容-->
 				<div class="col-sm-9 col-xs-12" id="rightCon">
 					<div class="panel panel-default">
+						<button type="button" id="toggleMenu" class="btn btn-primary btn-xs">菜单切换</button>
 						<div class="panel-heading">
 							实名认证
 						</div>
