@@ -25,6 +25,8 @@
 		include_once ("./header.php");
 		?>
 		<!--页面内容-->
+		<!--个人中心墙-->
+		<script src="dist/js/psTemplate.min.js" type="text/javascript" charset="utf-8"></script>
 		<div class="container" style="margin-top: 10px;">
 
 			<div class="row">
